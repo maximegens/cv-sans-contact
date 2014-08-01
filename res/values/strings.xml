@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <string name="app_name">InterfacePJI</string>
+    <string name="menu_settings">Settings</string>
+    
+    
+    <!-- String de la page d'accueil -->
+    <string name="titre_principale">C.V Sans Contact</string>
+    <string name="parametres">Paramétres</string>
+    <string name="ajout_recherche">Ajouter une offre/demande</string>
+    <string name="voir_mes_recherches">Voir mes recherches</string>
+    <string name="image_content_description">Image Sans Fils</string>
+
+    <!-- String de la page renseignements -->
+    <string name="titre_ajout_recherche">Ajouter une recherche</string>
+    <string name="type_recherche">Type de recherche</string>
+    <string name="categorie">Choisissez une categories</string>
+    <string name="poste">Indiquez le poste recherché</string>
+    <string name="offre">Offre</string>
+    <string name="demande">Demande</string>
+    <string name="resume">Résumé</string>
+    <string name="description_resume">Le resume est un court message texte echange avec les autres telephones avant l echange  des offres ou demandes, de maniére a transmettre une courte information en cas de coupure de liaison.</string>
+    <string name="resume_automatique">Automatique</string>
+    <string name="resume_manuel">Manuel</string>
+    <string name="pdf">PDF : Le PDF doit être placé à la racine de la carte SD pour le moment (TEST) nommé monCV.pdf ou monOffre.pdf</string>
+    <string name="valider_recherche">Valider la recherche</string>
+    
+    <!-- String des AlertDialog-->
+    <string name="description_suppresion">Voulez vous supprimer cette recherche ?</string>
+    
+     <!-- String de la page recherches -->
+    <string name="titre_voir_recherche">Mes recherches</string>
+    <string name="choix_recherches">trier par :</string>
+    <string name="voir_offre">Voir les offres</string>
+    <string name="voir_demandes">Voir les demandes</string>
+    <string name="liste_recherche"><u>Liste des recherches</u></string>
+    <string name="nb_recherche">nombre de recherches en cours</string>
+    
+    <!-- String de la page des items_recherches -->
+    <string name="item_type">Type</string>
+    <string name="item_categorie">Catégories</string>
+    <string name="item_poste">Poste</string>
+    <string name="item_reponse">réponses correspondantes</string>
+    <string name="item_content_description">Image pdf</string>
+
+
+     <!-- String de la page resultats_recherches -->
+    <string name="titre_reponse">Les réponses à votre recherche</string>
+    <string name="liste_reponse"><u>Liste des réponses</u></string>
+    <string name="nbRechercheReponse">nombre de réponses</string>
+    <string name="item_num_reponse">Voir la réponse n°</string>
+    
+         <!-- String de la page mofifier_recherches -->
+    <string name="titre_modifier">Détails de la recherche</string>
+    <string name="description_modifier">Sur cette page vous pouvez modifier ou supprimer la recherche</string>
+    <string name="supprimer">Supprimer la recherche</string>
+    <string name="modif_voir_pdf_recherche">Voir le PDF</string>
+    <string name="valider_modification">Valider modification</string>
+    
+</resources>

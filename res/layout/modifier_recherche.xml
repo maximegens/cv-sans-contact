@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	>
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	
+	    <TextView
+	        android:id="@+id/titreModificationRecherche"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/titre_modifier"
+	        android:textStyle="italic|bold"
+	        android:textSize="15sp" />
+	    
+	    <TextView
+		    android:id="@+id/descriptionModif"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/titreModificationRecherche"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:textStyle="italic"
+		    android:text="@string/description_modifier" />
+	
+	    <TextView
+	        android:id="@+id/typeModif"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/descriptionModif"
+	        android:paddingLeft="10dp"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/type_recherche" 
+	        android:textStyle="italic"
+	        />
+	    
+		<RadioGroup
+		    android:id="@+id/radioTypeRechercheModif"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/typeModif"
+		    android:orientation="horizontal" >
+	
+		    <RadioButton
+		        android:id="@+id/radioOffreModif"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/offre"
+		        android:checked="true"
+		    
+		        />
+		
+		    <RadioButton
+		        android:id="@+id/radioDemandeModif"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="20dp"
+		        android:text="@string/demande"
+		        android:checked="false"
+		         />
+		   </RadioGroup>
+	
+		<TextView
+		    android:id="@+id/categorieModif"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="10dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/radioTypeRechercheModif"
+		    android:text="@string/categorie"
+		    android:textStyle="italic"
+		     />
+	
+		<Spinner
+		    android:id="@+id/spinnerCategorieModif"
+		    android:layout_width="300sp"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/categorieModif"
+		    android:layout_marginLeft="10dp" />
+		
+		
+		<TextView
+		    android:id="@+id/posteModif"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="10dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/spinnerCategorieModif"
+		    android:text="@string/poste" 
+		    android:textStyle="italic"
+		    />
+	
+		<Spinner
+		    android:id="@+id/spinnerPosteModif"
+		    android:layout_width="300sp"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/posteModif"
+		    android:layout_marginLeft="10dp" 
+		    />
+		
+		<Button
+		    android:id="@+id/modifVoirPdfModif"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/spinnerPosteModif"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="20dp"
+		    android:paddingLeft="10dp"
+		    android:text="@string/modif_voir_pdf_recherche"
+		    android:textStyle="italic" />
+		
+		<TextView
+	        android:id="@+id/resumeModif"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/modifVoirPdfModif"
+	        android:paddingLeft="10dp"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/resume" 
+	        android:textStyle="italic"
+	        />
+		
+		<RadioGroup
+		    android:id="@+id/radioResumeModif"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_below="@+id/resumeModif" 
+		    
+		    >
+	
+		    <RadioButton
+		        android:id="@+id/radioAutomatiqueModif"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/resume_automatique" 
+		        android:checked="true"
+		        />
+		
+		    <RadioButton
+		        android:id="@+id/radioManuelModif"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="20dp"
+		        android:text="@string/resume_manuel" 
+		        android:checked="false"
+		        />
+		   </RadioGroup>
+		
+			<EditText
+			    android:id="@+id/editTextResumeModif"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignLeft="@+id/spinnerPosteModif"
+			    android:layout_alignRight="@+id/spinnerPosteModif"
+			    android:layout_below="@+id/radioResumeModif"
+			    android:ems="10"
+			    android:inputType="textMultiLine"
+			    android:visibility="invisible"
+			     />
+
+			<Button
+			    android:id="@+id/suppressionModif"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentRight="true"
+			    android:layout_below="@+id/editTextResumeModif"
+			    android:text="@string/supprimer" />
+
+			<Button
+			    android:id="@+id/validerRechercheModif"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentBottom="true"
+			    android:layout_alignParentLeft="true"
+			    android:text="@string/valider_modification" />
+
+
+				
+	</RelativeLayout>
+
+</ScrollView>

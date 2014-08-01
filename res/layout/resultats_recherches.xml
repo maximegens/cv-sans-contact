@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titreReponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/titre_reponse" 
+        android:textStyle="italic|bold"
+	    android:textSize="15sp"
+        />
+    
+    <TextView
+        android:id="@+id/listeRecherchesReponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titreReponse"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/liste_reponse"
+        android:textStyle="italic"
+         />
+
+    <ListView
+        android:id="@+id/listViewRechercheReponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listeRecherchesReponse"
+        android:layout_below="@+id/nbRechercheReponse"
+        android:layout_marginTop="15dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/nbRechercheReponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/listeRecherchesReponse"
+        android:text="@string/nbRechercheReponse"
+        android:layout_marginRight="10dp"
+        android:textStyle="italic"
+         />
+
+</RelativeLayout>

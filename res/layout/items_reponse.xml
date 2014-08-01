@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageViewPDF"
+        android:layout_width="82dp"
+        android:layout_height="86dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/pdf" 
+        android:contentDescription="@string/item_content_description"
+        />
+
+    <TextView
+        android:id="@+id/itemNumReponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/item_num_reponse" />
+
+    <TextView
+        android:id="@+id/itemResumeReponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewPDF"
+        android:layout_alignLeft="@+id/itemNumReponse"
+        android:layout_below="@+id/itemNumReponse"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/imageViewPDF"
+         />
+
+</RelativeLayout>

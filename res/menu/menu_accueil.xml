@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_stopper"
+        android:orderInCategory="100"
+        android:title="@string/menu_stopper_recherche"/>
+    
+    <item
+        android:id="@+id/menu_quitter"
+        android:orderInCategory="100"
+        android:title="@string/menu_quitter"
+        />
+
+</menu>

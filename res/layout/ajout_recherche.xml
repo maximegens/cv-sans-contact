@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	>
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	
+	    <TextView
+	        android:id="@+id/titreAjoutRecherche"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/titre_ajout_recherche"
+	        android:textStyle="italic|bold"
+	        android:textSize="15sp" />
+	
+	    <TextView
+	        android:id="@+id/type"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/titreAjoutRecherche"
+	        android:paddingLeft="10dp"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/type_recherche" 
+	        android:textStyle="italic"
+	        />
+	    
+		<RadioGroup
+		    android:id="@+id/radioTypeRecherche"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/type"
+		    android:orientation="horizontal" >
+	
+		    <RadioButton
+		        android:id="@+id/radioOffre"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/offre"
+		        android:checked="true"
+		    
+		        />
+		
+		    <RadioButton
+		        android:id="@+id/radioDemande"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="20dp"
+		        android:text="@string/demande"
+		        android:checked="false"
+		         />
+		   </RadioGroup>
+	
+		<TextView
+		    android:id="@+id/categorie"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="10dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/radioTypeRecherche"
+		    android:text="@string/categorie"
+		    android:textStyle="italic"
+		     />
+	
+		<Spinner
+		    android:id="@+id/spinnerCategorie"
+		    android:layout_width="300sp"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/categorie"
+		    android:layout_marginLeft="10dp" />
+		
+		
+		<TextView
+		    android:id="@+id/poste"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="10dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/spinnerCategorie"
+		    android:text="@string/poste" 
+		    android:textStyle="italic"
+		    />
+	
+		<Spinner
+		    android:id="@+id/spinnerPoste"
+		    android:layout_width="300sp"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/poste"
+		    android:layout_marginLeft="10dp" 
+		    />
+		
+		<TextView
+	        android:id="@+id/pdf"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/spinnerPoste"
+	        android:paddingLeft="10dp"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/pdf" 
+	        android:textStyle="italic"
+	        />
+
+		<TextView
+	        android:id="@+id/resume"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/pdf"
+	        android:paddingLeft="10dp"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/resume" 
+	        android:textStyle="italic"
+	        />
+		
+		<RadioGroup
+		    android:id="@+id/radioResume"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_below="@+id/resume" 
+		    
+		    >
+	
+		    <RadioButton
+		        android:id="@+id/radioAutomatique"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/resume_automatique" 
+		        android:checked="true"
+		        />
+		
+		    <RadioButton
+		        android:id="@+id/radioManuel"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="20dp"
+		        android:text="@string/resume_manuel" 
+		        android:checked="false"
+		        />
+		   </RadioGroup>
+		
+			<EditText
+			    android:id="@+id/editTextResume"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignLeft="@+id/spinnerPoste"
+			    android:layout_alignRight="@+id/spinnerPoste"
+			    android:layout_below="@+id/radioResume"
+			    android:ems="10"
+			    android:inputType="textMultiLine"
+			    android:visibility="invisible"
+			     />
+			
+			<Button
+			    android:id="@+id/validerRecherche"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@+id/editTextResume"
+			    android:layout_centerHorizontal="true"
+			    android:text="@string/valider_recherche" />
+				
+	</RelativeLayout>
+
+</ScrollView>

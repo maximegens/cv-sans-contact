@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titreVoirRecherche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/titre_voir_recherche" 
+        android:textStyle="italic|bold"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/choixRecherche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titreVoirRecherche"
+    	android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:text="@string/choix_recherches" />
+    <Spinner
+        android:id="@+id/spinnerChoixRecherche"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/choixRecherche" />
+    
+    <TextView
+        android:id="@+id/listeRecherches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerChoixRecherche"
+    	android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:text="@string/liste_recherche" />
+
+    <ListView
+        android:id="@+id/listViewRecherche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listeRecherches"
+        android:layout_below="@+id/listeRecherches"
+        android:layout_marginTop="15dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/nbRecherche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listeRecherches"
+        android:layout_alignParentRight="true"
+        android:textStyle="italic"
+        android:layout_marginRight="5dp"
+        android:text="@string/nb_recherche" />
+
+</RelativeLayout>

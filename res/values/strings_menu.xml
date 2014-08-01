@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Ce document XML contient tous les strings du menu -->
+<resources>
+    
+    <!-- Menu de la page Accueil -->
+    <string name="menu_stopper_recherche">Stopper la recherche</string>
+    <string name="menu_quitter">Quitter</string>
+    
+      <!-- Menu de la page AjouterRecherche -->
+    <string name="menu_voir_mes_recherches">Voir mes recherches</string>
+ 
+      <!-- Menu de la page VoirMesRecherche -->
+    <string name="menu_ajouer_recherche">Ajouter une recherche</string>
+
+    
+</resources>
